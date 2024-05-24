@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" class="display1" disabled>
+        </div>
+        <div class="keys">
+            <table>
+                <tr>
+                    <td><button class="operator" onclick="clearInput()">CE</button></td>
+                    <td><button class="operator" onclick="appendInput('%')">%</button></td>
+                    <td><button class="operator" onclick="appendInput('*')">x</button></td>
+                    <td><button class="operator" onclick="appendInput('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="appendInput(1)">1</button></td>
+                    <td><button class="number" onclick="appendInput(2)">2</button></td>
+                    <td><button class="number" onclick="appendInput(3)">3</button></td>
+                    <td><button class="operator" onclick="appendInput('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="appendInput(4)">4</button></td>
+                    <td><button class="number" onclick="appendInput(5)">5</button></td>
+                    <td><button class="number" onclick="appendInput(6)">6</button></td>
+                    <td ><button class="operator" onclick="appendInput('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="number" onclick="appendInput(7)">7</button></td>
+                    <td><button class="number" onclick="appendInput(8)">8</button></td>
+                    <td><button class="number" onclick="appendInput(9)">9</button></td>
+                    <td rowspan="2"><button class="extra-height" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="extra-width number" onclick="appendInput(0)">0</button></td>
+                    
+                    <td><button class="operator" onclick="appendInput('.')">.</button></td>
+                    
+                </tr>
+            </table>
+            
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
